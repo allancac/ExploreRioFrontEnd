@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TrailList } from './trail-list/trail-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, TrailList],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
