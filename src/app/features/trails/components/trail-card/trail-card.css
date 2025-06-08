@@ -1,0 +1,45 @@
+.trail-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    mat-card-title {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    mat-card-content {
+        flex-grow: 1;
+    }
+
+    mat-card-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+        padding: 0 16px 16px
+    }
+
+    img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    mat-list-item {
+        height: 25px;
+    }
+
+    .more-info-link {
+        color: blue;
+        text-decoration: underline;
+    }
+
+    button {
+        margin-right: 12px;
+    }
+
+    .icon-favorite {
+        color: red;
+    }
+}

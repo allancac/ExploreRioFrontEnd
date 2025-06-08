@@ -1,0 +1,32 @@
+<mat-card class="trail-card" appearance="outlined">
+    <mat-card-header>
+        <mat-card-title class="trail-card">{{trail.name}}</mat-card-title>
+    </mat-card-header>
+
+    <img mat-card-image src={{trail.photoUrl}} alt={{trail.name}}>
+
+    <mat-card-content>
+        <p>{{ trail.description.slice(0,50)}}
+            <span class="more-info-link"> ver mais</span>
+        </p>
+        <!-- @for(keyword of trail.keywords.split(",");track keyword){
+            <mat-chip>{{keyword}}</mat-chip>
+            } -->
+        <mat-list>
+            <mat-list-item><strong>Duração: </strong>{{ trail.time }} horas</mat-list-item>
+            <mat-list-item><strong>Distância: </strong>{{ trail.distance }} km</mat-list-item>
+            <mat-list-item><strong>Região: </strong>{{ trail.region }}</mat-list-item>
+        </mat-list>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button matButton="elevated" color="primary">
+            <mat-icon class="icon-favorite">favorite</mat-icon>
+            Favoritar
+        </button>
+        <button matButton="elevated" color="primary">
+            <mat-icon>add</mat-icon>
+            Detalhes
+        </button>
+    </mat-card-actions>
+</mat-card>
